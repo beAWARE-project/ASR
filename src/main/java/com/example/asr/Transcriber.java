@@ -32,14 +32,12 @@ public static void main(String[] args) {
 public static String transcribe(String fileURL, String language) throws IOException {
 	// this is used to upload a file from workspace to Raw data Store 
 	//RawDataStore.storeFile("test.wav","test.wav");
-
+	
 	// 1.Download audio file to current workspace
-//	String fileNameExt = fileURL.substring(fileURL.lastIndexOf('.'), fileURL.length());
+	String fileNameExt = fileURL.substring(fileURL.lastIndexOf('.'), fileURL.length());
 	//otan trexoume me to neo url na xrisimopoiisw:    String fileName = fileURL.substring(fileURL.lastIndexOf('=')+1, fileURL.length());
-//    	String fileName = "newAudio"+fileNameExt;
-//	RawDataStore.retrieveFile(fileURL,fileName);
-	String fileName = "newAudio.wav";
-    String targetName = "target.wav";
+    	String fileName = "newAudio"+fileNameExt;
+    	String targetName = "target.wav";
 
 	RawDataStore.retrieveFile(fileURL,fileName);
 	FileEncoder.fileEncode(fileName,targetName);
