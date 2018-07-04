@@ -48,13 +48,13 @@ public static String transcribe(String fileURL, String language) throws IOExcept
 
     switch (language) {
     case "en-US": //English online
-    	configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
-    	configuration.setDictionaryPath("resource:/edu/cmu/sphinx/models/en-us/cmudict-en-us.dict");
-    	configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us.lm.bin");
+    	//configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
+    	//configuration.setDictionaryPath("resource:/edu/cmu/sphinx/models/en-us/cmudict-en-us.dict");
+    	//configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us.lm.bin");
         // //alternativelly 
-        	//configuration.setAcousticModelPath("file:acoustic_models/English/en-us");
-        	//configuration.setDictionaryPath("file:acoustic_models/English/cmudict-en-us.dict");
-        	//configuration.setLanguageModelPath("file:acoustic_models/English/en-us.lm.bin");
+        	configuration.setAcousticModelPath("file:acoustic_models/English/en-us");
+        	configuration.setDictionaryPath("file:acoustic_models/English/cmudict-en-us.dict");
+        	configuration.setLanguageModelPath("file:acoustic_models/English/en-us.lm.bin");
         break;
     case "it-IT"://Italian 
     	//configuration.setAcousticModelPath("file:acoustic_models/Italian/cmusphinx-it-5.2/model_parameters/voxforge_it_sphinx.cd_cont_2000");
