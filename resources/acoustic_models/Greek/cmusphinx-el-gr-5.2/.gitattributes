@@ -1,0 +1,2 @@
+el-gr_new.dic filter=lfs diff=lfs merge=lfs -text
+*.dic filter=lfs diff=lfs merge=lfs -text
