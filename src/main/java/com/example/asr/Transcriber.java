@@ -77,7 +77,8 @@ public static String transcribe(String fileURL, String language) throws IOExcept
 
         break;
     case "el-GR"://Greek 
-        configuration.setAcousticModelPath("file:acoustic_models/Greek/cmusphinx-el-gr-5.2/el-gr.cd_cont_5000");
+        //configuration.setAcousticModelPath("file:acoustic_models/Greek/cmusphinx-el-gr-5.2/el-gr.cd_cont_5000");
+	configuration.setAcousticModelPath("file:acoustic_models/Greek/cmusphinx-el-gr-5.2/el-gr.cd_cont_5000_adapted2");
         configuration.setDictionaryPath("file:acoustic_models/Greek/cmusphinx-el-gr-5.2/el-gr.dic");
         configuration.setLanguageModelPath("file:acoustic_models/Greek/cmusphinx-el-gr-5.2/el-gr.lm.bin");
         //configuration.setLanguageModelPath("file:acoustic_models/Greek/cmusphinx-el-gr-5.2/el-gr.lm");
