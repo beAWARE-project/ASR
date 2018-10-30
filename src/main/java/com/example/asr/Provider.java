@@ -66,7 +66,7 @@ public class Provider{
         	
           	     		transcription =   Transcriber.transcribe(url,language);
                         // //In case we write the result to MongoDB:
-               	     	//String transcription_id=MongoAPI.mongoWrite(transcription,audio_timestamp,language,incidentID); 
+               	     	String transcription_id=MongoAPI.mongoWrite(transcription,audio_timestamp,language,incidentID); 
                         // //a.create json directly
                         // //String jsonStrOut = "{\"IDRef\": \"507f191e810c19729de860ea\"}";
                	     	//String jsonStrOut = "{\"IDRef\": \""
