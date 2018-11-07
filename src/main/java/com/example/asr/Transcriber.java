@@ -40,8 +40,16 @@ public static String transcribe(String fileURL, String language) throws IOExcept
     	String targetName = "target.wav";
 
 	RawDataStore.retrieveFile(fileURL,fileName);
-	FileEncoder.fileEncode(fileName,targetName);
-
+	//FileEncoder.fileEncode(fileName,targetName);
+	if (FileEncoder.fileEncode(fileName,targetName)=="nok"){
+		String transcription="";
+		   return transcription;
+	}
+	else {//ends function
+		
+		
+		
+		
 	// 2. Load ASR configuration 
 	Configuration configuration = new Configuration();
 	
@@ -200,7 +208,8 @@ public static String transcribe(String fileURL, String language) throws IOExcept
          //System.setOut(new PrintStream(f));         
        //  System.out.println(transcription);
          return transcription;
-
-	}
+	} //if ends here
+	
+}
 
 }
