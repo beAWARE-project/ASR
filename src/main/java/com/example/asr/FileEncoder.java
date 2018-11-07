@@ -14,7 +14,7 @@ public class FileEncoder {
     public static void main(String[] args) {
     	
     }
-    public static void fileEncode(String inputFile,String outputFile) {
+    public static String fileEncode(String inputFile,String outputFile) {
     	
         // TODO Auto-generated method stub
         File source = new File(inputFile);
@@ -28,18 +28,23 @@ public class FileEncoder {
         attrs.setFormat("wav");
         attrs.setAudioAttributes(audio);
         Encoder encoder = new Encoder();
+        String status="ok";
         try {
             encoder.encode(source, target, attrs);
         } catch (IllegalArgumentException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+            status="nok";
         } catch (InputFormatException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+            status="nok";
         } catch (EncoderException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+            status="nok";
         }
+        return status;
     }
 
 }
