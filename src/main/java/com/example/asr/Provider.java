@@ -62,7 +62,7 @@ public class Provider{
                         
                                        
                     	sendMessage("Msg from Hub received. File is being processed..");
-                    	String transcription;
+                    	String transcription="";
         	
           	     		transcription =   Transcriber.transcribe(url,language);
                         // //In case we write the result to MongoDB:
