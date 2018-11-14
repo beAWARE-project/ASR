@@ -88,7 +88,7 @@ public static String transcribe(String fileURL, String language) throws IOExcept
         //configuration.setAcousticModelPath("file:acoustic_models/Greek/cmusphinx-el-gr-5.2/el-gr.cd_cont_5000");
         configuration.setAcousticModelPath("file:acoustic_models/Greek/cmusphinx-el-gr-5.2/el-gr.cd_cont_5000_adapted5");
         //configuration.setDictionaryPath("file:acoustic_models/Greek/cmusphinx-el-gr-5.2/el-gr.dic");
-	configuration.setDictionaryPath("file:acoustic_models/Greek/cmusphinx-el-gr-5.2/el-gr_new7.dic");
+	configuration.setDictionaryPath("file:acoustic_models/Greek/cmusphinx-el-gr-5.2/el-gr_new8.dic");
         configuration.setLanguageModelPath("file:acoustic_models/Greek/cmusphinx-el-gr-5.2/el-gr.lm.bin");
         //configuration.setLanguageModelPath("file:acoustic_models/Greek/cmusphinx-el-gr-5.2/el-gr.lm");
         break;
