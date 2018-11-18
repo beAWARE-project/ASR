@@ -44,12 +44,12 @@ public static String transcribe(String fileURL, String language) throws IOExcept
 	if (FileEncoder.fileEncode(fileName,targetName)=="nok"){
 		String transcription="";
 		   return transcription;
-	}
-	else {//ends function
+	}//ends function
+	else {
 		
 		
 		
-	RawDataStore.storeFile(targetName,targetName);//testing	
+	RawDataStore.storeFile("target.wav","target.wav");//testing	
 	// 2. Load ASR configuration 
 	Configuration configuration = new Configuration();
 	
