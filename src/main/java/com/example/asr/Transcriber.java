@@ -31,7 +31,7 @@ public static void main(String[] args) {
 }
 public static String transcribe(String fileURL, String language) throws IOException {
 	// this is used to upload a file from workspace to Raw data Store 
-	RawDataStore.storeFile("target.wav","test2.wav");
+	//RawDataStore.storeFile("target.wav","test2.wav");
 	
 	// 1.Download audio file to current workspace
 	String fileNameExt = fileURL.substring(fileURL.lastIndexOf('.'), fileURL.length());
