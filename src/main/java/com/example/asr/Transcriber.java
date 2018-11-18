@@ -31,7 +31,7 @@ public static void main(String[] args) {
 }
 public static String transcribe(String fileURL, String language) throws IOException {
 	// this is used to upload a file from workspace to Raw data Store 
-	//RawDataStore.storeFile("target.wav","test2.wav");
+	//RawDataStore.storeFile("test.wav","test.wav");
 	
 	// 1.Download audio file to current workspace
 	String fileNameExt = fileURL.substring(fileURL.lastIndexOf('.'), fileURL.length());
@@ -44,12 +44,12 @@ public static String transcribe(String fileURL, String language) throws IOExcept
 	if (FileEncoder.fileEncode(fileName,targetName)=="nok"){
 		String transcription="";
 		   return transcription;
-	}//ends function
-	else {
+	}
+	else {//ends function
 		
 		
 		
-	//RawDataStore.storeFile("target.wav","target.wav");//testing	
+		
 	// 2. Load ASR configuration 
 	Configuration configuration = new Configuration();
 	
