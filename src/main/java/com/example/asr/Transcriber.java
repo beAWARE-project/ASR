@@ -145,7 +145,7 @@ public static String transcribe(String fileURL, String language) throws IOExcept
         transcription += " "+result.getHypothesis()+".";
         
         
-        
+         
         
         List<WordResult> words = result.getWords();
         for (WordResult wordResult: words) {
