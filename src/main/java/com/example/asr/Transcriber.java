@@ -49,7 +49,7 @@ public static String transcribe(String fileURL, String language) throws IOExcept
 		
 		
 		
-	RawDataStore.storeFile("target.wav","target.wav");//testing	
+	//RawDataStore.storeFile("target.wav","target.wav");//testing	
 	// 2. Load ASR configuration 
 	Configuration configuration = new Configuration();
 	
