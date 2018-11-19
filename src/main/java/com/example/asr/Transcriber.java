@@ -27,7 +27,7 @@ import java.io.InputStream;
 public class Transcriber {
 
 public static void main(String[] args) {
-	
+	 
 }
 public static String transcribe(String fileURL, String language) throws IOException {
 	// this is used to upload a file from workspace to Raw data Store 
