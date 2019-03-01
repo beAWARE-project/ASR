@@ -41,7 +41,7 @@ public static String transcribe(String fileURL, String language) throws IOExcept
 	//RawDataStore.retrieveFile(fileURL,fileName); //to be used with the old Storage
 	//CDR.retrieveFile(fileURL,fileName);
 	if (CDR.retrieveFile(fileURL,fileName)==false){
-		String transcription="false";
+		String transcription="fileURL="+fileURL+", fileName="+fileName+", fileNameExt="+fileNameExt;
 		   return transcription;
 	}
 	//FileEncoder.fileEncode(fileName,targetName);
