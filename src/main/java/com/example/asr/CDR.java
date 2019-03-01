@@ -67,13 +67,14 @@ public class CDR {
         return status;
     }
     
-    public static boolean retrieveFile(String fileName, String destinationPath){
+    public static boolean retrieveFile(String fileURL, String destinationPath){
         boolean status = false;
         try {
 
             HttpClient httpclient = HttpClients.createDefault();
 
-            HttpGet httpGet = new HttpGet(Configuration.DATA_STORAGE_URL + fileName);
+            //HttpGet httpGet = new HttpGet(Configuration.DATA_STORAGE_URL + fileName);
+            HttpGet httpGet = new HttpGet(fileURL);
             HttpResponse getResponse = httpclient.execute(httpGet);
             if(getResponse.getStatusLine().getStatusCode() == 200){
                 HttpEntity getEntity = getResponse.getEntity();
