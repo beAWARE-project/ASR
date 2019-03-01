@@ -39,7 +39,8 @@ public static String transcribe(String fileURL, String language) throws IOExcept
     	String fileName = "newAudio"+fileNameExt;
     	String targetName = "target.wav";
 
-	RawDataStore.retrieveFile(fileURL,fileName);
+	//RawDataStore.retrieveFile(fileURL,fileName); //to be used with the old Storage
+	CDR.retrieveFile(fileURL,fileName);
 	//FileEncoder.fileEncode(fileName,targetName);
 	if (FileEncoder.fileEncode(fileName,targetName)=="nok"){
 		String transcription="";
