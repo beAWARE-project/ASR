@@ -10,7 +10,7 @@ package com.example.asr;
  *
  * @author andreadisst
  */
-public class Config {
+public class Configuration {
     
    // public static String TOP028_TEXT_ANALYSED = "TOP028_TEXT_ANALYSED";
     //public static String TOP001_SOCIAL_MEDIA_TEXT = "TOP001_SOCIAL_MEDIA_TEXT";
