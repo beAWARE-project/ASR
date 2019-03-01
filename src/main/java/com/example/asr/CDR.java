@@ -13,7 +13,7 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import com.example.asr.Configuration;
+import com.example.asr.Config;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHeaders;
 import org.apache.http.HttpResponse;
@@ -39,7 +39,7 @@ public class CDR {
         try {
             
             HttpClient httpclient = HttpClients.createDefault();
-            HttpPost httppost = new HttpPost(Configuration.DATA_STORAGE_URL + fileName);
+            HttpPost httppost = new HttpPost(Config.DATA_STORAGE_URL + fileName);
             httppost.setHeader(HttpHeaders.CONTENT_TYPE, contentType); //e.g. "image/jpeg"
 
             Path path = Paths.get(sourcePath);
@@ -73,7 +73,7 @@ public class CDR {
 
             HttpClient httpclient = HttpClients.createDefault();
 
-            HttpGet httpGet = new HttpGet(Configuration.DATA_STORAGE_URL + fileName);
+            HttpGet httpGet = new HttpGet(Config.DATA_STORAGE_URL + fileName);
             HttpResponse getResponse = httpclient.execute(httpGet);
             if(getResponse.getStatusLine().getStatusCode() == 200){
                 HttpEntity getEntity = getResponse.getEntity();
@@ -100,7 +100,7 @@ public class CDR {
 
             HttpClient httpclient = HttpClients.createDefault();
 
-            HttpDelete httpDelete = new HttpDelete(Configuration.DATA_STORAGE_URL + fileName);
+            HttpDelete httpDelete = new HttpDelete(Config.DATA_STORAGE_URL + fileName);
             HttpResponse getResponse = httpclient.execute(httpDelete);
             if(getResponse.getStatusLine().getStatusCode() == 200){
                 System.out.println("SUCCESS - file was deleted");

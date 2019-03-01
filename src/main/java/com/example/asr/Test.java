@@ -13,23 +13,28 @@ public class Test {
 		
 		
 		String language="en-US";
-		String url="http://object-store-app.eu-gb.mybluemix.net/objectStorage?file=test.wav"; //english msg6
+		String url="https://beaware-1.eu-de.containers.appdomain.cloud/object-store/6245%2F_0.wav";
+		
 		switch (lang_id) {
 		case "en":
 			language="en-US";
-			url="http://object-store-app.eu-gb.mybluemix.net/objectStorage?file=english_rec.wav";
+			//url="http://object-store-app.eu-gb.mybluemix.net/objectStorage?file=english_rec.wav";
 			break;
 	    case "el":
 			language="el-GR";
-			url="http://object-store-app.eu-gb.mybluemix.net/objectStorage?file=greek_rec.wav";
+			//url="http://object-store-app.eu-gb.mybluemix.net/objectStorage?file=greek_rec.wav";
+			url="https://beaware-1.eu-de.containers.appdomain.cloud/object-store/6245%2F_0.wav";
 			break;
 	    case "es":
 			language="es-ES";
-			url="http://object-store-app.eu-gb.mybluemix.net/objectStorage?file=spanish_rec.wav";
+			//url="http://object-store-app.eu-gb.mybluemix.net/objectStorage?file=spanish0.wav";
+			url="https://beaware-1.eu-de.containers.appdomain.cloud/object-store/spanish1.wav";
 			break;
 	    case "it":
 			language="it-IT";
-			url="http://object-store-app.eu-gb.mybluemix.net/objectStorage?file=italian_rec.wav";
+			//url="http://object-store-app.eu-gb.mybluemix.net/objectStorage?file=italian_rec.wav";
+			url="https://beaware-1.eu-de.containers.appdomain.cloud/object-store/italian1.wav";
+
 			break;
 		}
 		

@@ -10,11 +10,11 @@ package com.example.asr;
  *
  * @author andreadisst
  */
-public class Configuration {
+public class Config {
     
-    public static String TOP028_TEXT_ANALYSED = "TOP028_TEXT_ANALYSED";
-    public static String TOP001_SOCIAL_MEDIA_TEXT = "TOP001_SOCIAL_MEDIA_TEXT";
-    public static String TOP003_SOCIAL_MEDIA_REPORT = "TOP003_SOCIAL_MEDIA_REPORT";
+   // public static String TOP028_TEXT_ANALYSED = "TOP028_TEXT_ANALYSED";
+    //public static String TOP001_SOCIAL_MEDIA_TEXT = "TOP001_SOCIAL_MEDIA_TEXT";
+    //public static String TOP003_SOCIAL_MEDIA_REPORT = "TOP003_SOCIAL_MEDIA_REPORT";
     
     public static String JAAS_CONFIG_PROPERTY = "java.security.auth.login.config";
     public static String key = "key";
