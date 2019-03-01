@@ -37,16 +37,17 @@ public static String transcribe(String fileURL, String language) throws IOExcept
 	String fileNameExt = fileURL.substring(fileURL.lastIndexOf('.'), fileURL.length());
 	//otan trexoume me to neo url na xrisimopoiisw:    String fileName = fileURL.substring(fileURL.lastIndexOf('=')+1, fileURL.length());
     	String fileName = "newAudio"+fileNameExt;
-    	String targetName = "target.wav";
+    	//String targetName = "target.wav";
+    	String targetName = fileName;
 
 	//RawDataStore.retrieveFile(fileURL,fileName); //to be used with the old Storage
 	CDR.retrieveFile(fileURL,fileName);
 	//FileEncoder.fileEncode(fileName,targetName);
-	if (FileEncoder.fileEncode(fileName,targetName)=="nok"){
-		String transcription="";
-		   return transcription;
-	}
-	else {//ends function
+	//if (FileEncoder.fileEncode(fileName,targetName)=="nok"){
+	//	String transcription="";
+	//	   return transcription;
+	//}
+	//else {//ends function
 		
 		
 		
