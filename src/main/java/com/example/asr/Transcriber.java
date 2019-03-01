@@ -41,13 +41,20 @@ public static String transcribe(String fileURL, String language) throws IOExcept
     	String targetName = fileName;
 
 	//RawDataStore.retrieveFile(fileURL,fileName); //to be used with the old Storage
-	CDR.retrieveFile(fileURL,fileName);
+	//CDR.retrieveFile(fileURL,fileName);
+	if (CDR.retrieveFile(fileURL,fileName)=="false"){
+		String transcription="false";
+		   return transcription;
+	}
 	//FileEncoder.fileEncode(fileName,targetName);
-	//if (FileEncoder.fileEncode(fileName,targetName)=="nok"){
-	//	String transcription="";
-	//	   return transcription;
-	//}
-	//else {//ends function
+	
+	
+	
+	if (FileEncoder.fileEncode(fileName,targetName)=="nok"){
+		String transcription="nok";
+		   return transcription;
+	}
+	else {//ends function
 		
 		
 		
