@@ -47,7 +47,7 @@ public static String transcribe(String fileURL, String language) throws IOExcept
 	
 	
 	if (FileEncoder.fileEncode(fileName,targetName)=="nok"){
-		String transcription="nok";
+         	String transcription="fileURL="+fileURL+", fileName="+fileName+", fileNameExt="+fileNameExt+" targetName: "+targetName;
 		   return transcription;
 	}
 	else {//ends function
