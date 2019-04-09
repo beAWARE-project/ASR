@@ -21,7 +21,7 @@ spec:
         app: asr
     spec:
       containers:
-      - image: beaware/asr:IMAGE_TAG
+      - image: beaware/asr:v2
         imagePullPolicy: Always
         name: asr
         ports:
