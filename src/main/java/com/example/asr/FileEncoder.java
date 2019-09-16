@@ -21,7 +21,7 @@ public class FileEncoder {
         File target = new File(outputFile);
         AudioAttributes audio	= new AudioAttributes();
         audio.setCodec("pcm_s16le");
-        audio.setBitRate(new Integer(16));
+        audio.setBitRate(new Integer(64000));
         audio.setChannels(new Integer(1));
         audio.setSamplingRate(new Integer(16000));
         EncodingAttributes attrs = new EncodingAttributes();
