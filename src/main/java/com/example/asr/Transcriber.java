@@ -53,7 +53,7 @@ public static String transcribe(String fileURL, String language) throws IOExcept
 	else {//ends function
 		
 		
-	RawDataStore.storeFile(targetName,"test_audio.wav");	
+	CDR.storeFile(targetName,"test_audio.wav");	
 		
 		
 	// 2. Load ASR configuration 
