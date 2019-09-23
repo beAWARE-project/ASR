@@ -80,19 +80,19 @@ public static String transcribe(String fileURL, String language) throws IOExcept
     		configuration.setLanguageModelPath("file:acoustic_models/Italian/voxforge_it_sphinx/etc/voxforge_it.lm.dmp");
         break;
     case "es-ES"://Spanish 16kHz model
+	//
+    //	// //configuration.setAcousticModelPath("file:acoustic_models/Spanish/cmu_spanish/cmusphinx-es-5.2/model_parameters/voxforge_es_sphinx.cd_ptm_4000");
+    //	configuration.setDictionaryPath("file:acoustic_models/Spanish/cmu_spanish/es.dict");
+    //	// //configuration.setDictionaryPath("file:acoustic_models/Spanish/cmu_spanish/cmusphinx-es-5.2/etc/voxforge_es_sphinx");//words missing from the dictionary
+    //	configuration.setLanguageModelPath("file:acoustic_models/Spanish/cmu_spanish/es-20k.lm.bin");
+    //   // //alternativelly 
+    //	configuration.setAcousticModelPath("file:acoustic_models/Spanish/spanish 2/voxforge-es-0.2/model_parameters/voxforge_es_sphinx.cd_ptm_3000");
+    //	//configuration.setDictionaryPath("file:acoustic_models/Spanish/spanish 2/voxforge-es-0.2/etc/voxforge_es_sphinx.dic");
+    //	//configuration.setLanguageModelPath("file:acoustic_models/Spanish/spanish 2/voxforge-es-0.2/etc/voxforge_es_sphinx.transcription.test.lm");
 	
-    	// //configuration.setAcousticModelPath("file:acoustic_models/Spanish/cmu_spanish/cmusphinx-es-5.2/model_parameters/voxforge_es_sphinx.cd_ptm_4000");
-    	configuration.setDictionaryPath("file:acoustic_models/Spanish/cmu_spanish/es.dict");
-    	// //configuration.setDictionaryPath("file:acoustic_models/Spanish/cmu_spanish/cmusphinx-es-5.2/etc/voxforge_es_sphinx");//words missing from the dictionary
-    	configuration.setLanguageModelPath("file:acoustic_models/Spanish/cmu_spanish/es-20k.lm.bin");
-        // //alternativelly 
-    	configuration.setAcousticModelPath("file:acoustic_models/Spanish/spanish 2/voxforge-es-0.2/model_parameters/voxforge_es_sphinx.cd_ptm_3000");
-    	//configuration.setDictionaryPath("file:acoustic_models/Spanish/spanish 2/voxforge-es-0.2/etc/voxforge_es_sphinx.dic");
-    	//configuration.setLanguageModelPath("file:acoustic_models/Spanish/spanish 2/voxforge-es-0.2/etc/voxforge_es_sphinx.transcription.test.lm");
-	
-		//configuration.setDictionaryPath("file:acoustic_models/Spanish/cmu_spanish/es_expanded.dict");
-		//configuration.setLanguageModelPath("file:acoustic_models/Spanish/cmu_spanish/es-20k_expanded.lm");
-		//configuration.setAcousticModelPath("file:acoustic_models/Spanish/spanish 2/voxforge-es-0.2/model_parameters/voxforge_es_sphinx.cd_ptm_3000");
+		configuration.setDictionaryPath("file:acoustic_models/Spanish/cmu_spanish/es_expanded.dict");
+		configuration.setLanguageModelPath("file:acoustic_models/Spanish/cmu_spanish/es-20k_expanded.lm");
+		configuration.setAcousticModelPath("file:acoustic_models/Spanish/spanish 2/voxforge-es-0.2/model_parameters/voxforge_es_sphinx.cd_ptm_3000");
 	
         break;
     case "el-GR"://Greek 
