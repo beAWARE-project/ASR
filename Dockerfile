@@ -8,7 +8,6 @@ COPY resources/acoustic_models/ /home/acoustic_models
 WORKDIR  /home/acoustic_models/Spanish/cmu_spanish/
 
 RUN wget -O es-20k.lm  https://beaware-1.eu-de.containers.appdomain.cloud/object-store/es-20k.lm
-
 RUN wget -O es-20k_expanded.lm  https://beaware-1.eu-de.containers.appdomain.cloud/object-store/es-20k_expanded.lm
 
 WORKDIR /home
