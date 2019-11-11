@@ -90,8 +90,8 @@ public static String transcribe(String fileURL, String language) throws IOExcept
     //	//configuration.setDictionaryPath("file:acoustic_models/Spanish/spanish 2/voxforge-es-0.2/etc/voxforge_es_sphinx.dic");
     //	//configuration.setLanguageModelPath("file:acoustic_models/Spanish/spanish 2/voxforge-es-0.2/etc/voxforge_es_sphinx.transcription.test.lm");
 	
-		configuration.setDictionaryPath("file:acoustic_models/Spanish/cmu_spanish/es_expanded.dict");
-		configuration.setLanguageModelPath("file:acoustic_models/Spanish/cmu_spanish/es-20k_expanded.lm");
+		configuration.setDictionaryPath("file:acoustic_models/Spanish/cmu_spanish/es_expanded2.dict");
+		configuration.setLanguageModelPath("file:acoustic_models/Spanish/cmu_spanish/es-20k_expanded5b.lm");
 		configuration.setAcousticModelPath("file:acoustic_models/Spanish/spanish 2/voxforge-es-0.2/model_parameters/voxforge_es_sphinx.cd_ptm_3000");
 	
         break;
